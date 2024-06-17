@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All About German</title>
+    <link href="bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--구글 폰트-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <!--네비게이션-->
+    <nav class="navbar navbar-expand-sm bg-light-subtle fixed-top opacity-75" id="nav">
+        <div class="container">
+            <!--로고-->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/aag.png" width="150" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--메뉴-->
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2 mr">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">독일소개</a>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="life.html#visa" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일생활
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="life.html#visa">안멜둥&비자</a></li>
+                            <li><a class="dropdown-item" href="life.html#house">집구하기</a></li>
+                        </ul>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#definition" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일여행
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="travel.html#map">지도보기</a></li>
+                            <li><a class="dropdown-item" href="travel.html#travelplace">여행지</a></li>
+							<li><a class="dropdown-item" href="travel.html#dialog">회화표현</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qna.html">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--독일이란-->
+    <section class="py-5" id="practice">
+        <div class="container overflow-hidden mb-4">
+            <div class="text-center pt-5">
+				<h1 class="blackHan display-3 mb-4">About German</h1>
+            </div>
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">1) 지리적 다양성</h1>
+                            <ul class="">
+								<p>
+								독일의 풍경은 바람이 많이 부는 북해와 발트해 연안부터 바이에른의 고산 풍경까지 매우 다양합니다.
+								이곳은 울창한 숲과 라인강같은 아름다운 계곡, 구불구불한 언덕과 평야를 자랑합니다.
+								</p>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/flag.png" class="img-fluid rounded">                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">2) 경제력</h1>
+                            <ul class="notoKR">
+                             <p>
+								유럽 최대의 경제국이자 세계 최고의 산업 국가 중 하나인 독일은 특히 자동차, 기계 및 전기 공학 분야의 엔지니어링 전문 지식으로 유명합니다.
+								폭스바겐, BMW와 같은 글로벌 브랜드의 본거지 입니다.
+								</p>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/food.webp" class="img-fluid rounded">                    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">3) 문화적 풍요로움</h1>
+                            <ul class="notoKR">
+                                 <p>
+								독일은 서구 문화에 큰 영향을 미친 역사를 지닌 깊은 문화유산을 보유하고 있습니다.
+								이곳은 베토벤, 바흐와 같은 작곡가 그리고 칸트, 니체와 같은 작가들의 탄생지입니다.
+								이 나라에는 로마 시대부터 현대까지 풍부한 역사를 반영하는 40개가 넘는 유네스코 세계문화유산이 있습니다.
+								</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/place.jpeg" class="img-fluid rounded">
+                    </div>
+                </div>
+				
+            </div>
+			
+			
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">2) 경제력</h1>
+                            <ul class="notoKR">
+                             <p>
+								유럽 최대의 경제국이자 세계 최고의 산업 국가 중 하나인 독일은 특히 자동차, 기계 및 전기 공학 분야의 엔지니어링 전문 지식으로 유명합니다.
+								폭스바겐, BMW와 같은 글로벌 브랜드의 본거지 입니다.
+								</p>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/food.webp" class="img-fluid rounded">                    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">3) 문화적 풍요로움</h1>
+                            <ul class="notoKR">
+                                 <p>
+								독일은 서구 문화에 큰 영향을 미친 역사를 지닌 깊은 문화유산을 보유하고 있습니다.
+								이곳은 베토벤, 바흐와 같은 작곡가 그리고 칸트, 니체와 같은 작가들의 탄생지입니다.
+								이 나라에는 로마 시대부터 현대까지 풍부한 역사를 반영하는 40개가 넘는 유네스코 세계문화유산이 있습니다.
+								</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/place.jpeg" class="img-fluid rounded">
+                    </div>
+                </div>
+				
+            </div>
+
+            <div class="row g-4 mb-2 justify-content-center align-items-center">
+                
+                <div class="col-lg-8">
+                    <div class="bg-white rounded">
+                        <div class="p-4">
+                            <h1 class="blackHan display-6 text-center">2) 경제력</h1>
+                            <ul class="notoKR">
+                             <p>
+								유럽 최대의 경제국이자 세계 최고의 산업 국가 중 하나인 독일은 특히 자동차, 기계 및 전기 공학 분야의 엔지니어링 전문 지식으로 유명합니다.
+								폭스바겐, BMW와 같은 글로벌 브랜드의 본거지 입니다.
+								</p>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-lg-4">
+                    <div class="p-4">
+                        <img src="images/food.webp" class="img-fluid rounded">                    
+                    </div>
+                </div>
+                </div>
+            </div>			
+
+            
+        </div>
+    </section>
+	
+
+    <!--푸터-->
+    <footer class="bg-white">
+        <div class="container text-center">
+            <div class="pt-4 pb-3">
+            <p class="mt-1 mb-4 text-black-50">Designed by 이지윤</p>
+        </div>
+    </footer>
+
+    <script src="./bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ForSafe</title>
+    <link href="../../cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <!--네비게이션-->
+    <nav class="navbar navbar-expand-sm bg-light-subtle fixed-top opacity-75" id="nav">
+        <div class="container">
+            <!--로고-->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/aag.png" width="150" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--메뉴-->
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2 mr">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">독일소개</a>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="life.html#visa" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일생활
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="life.html#visa">안멜둥&비자</a></li>
+                            <li><a class="dropdown-item" href="life.html#house">집구하기</a></li>
+                        </ul>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#definition" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일여행
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="travel.html#map">지도보기</a></li>
+                            <li><a class="dropdown-item" href="travel.html#travelplace">여행지</a></li>
+							<li><a class="dropdown-item" href="travel.html#dialog">회화표현</a></li>
+                        </ul>
+                    </li>
+					
+                    <li class="nav-item">
+                        <a class="nav-link" href="togetherWrite.html">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--함께 나누어요 // together_home-->
+    <section class="py-5" id="together_home">
+        <div class="container overflow-hidden my-5">
+            <div class="row g-4">
+                <div class="mt-5 col-lg-10">
+                    <h1 class="display-3 mb-0 d-inline-block">Q&A</h1>
+                    <p class="ms-3 d-inline-block mb-0">독일에 대해 자주하는 질문</p>
+                </div>
+            </div>
+
+            <hr class="mt-0 mb-5">
+
+<ul class="qna">
+            <li>
+                <input type="checkbox" id="qna-1">
+                <label for="qna-1">독일에서 6개월 머물 때 비자가 필요할까?</label>
+                <div>
+                    <p>3개월은 무비자로 머물 수 있지만 그 이상은 비자가 반드시 필요해요.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-2">
+                <label for="qna-2">독일 물가는 한국에 비해 비싼가?</label>
+                <div>
+                    <p>독일의 외식 물가는 한국에 비해 비싼편이지만 마트물가는 저렴해요.</p>
+                    <p>싱싱한 과일이 특히 저렴해요. 많이 드시길 추천드립니다.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-3">
+                <label for="qna-3">교통비는 어떠한가?</label>
+                <div>
+                    <p>독일에는 한달에 49.9유로만 내면 모든 교통수단을 무제한으로 이용 가능합니다.</p>
+                    <p>학생은 23.9유로에 이용가능해요. 단, ICE 와 같은 급행 기차는 추가로 요금을 지불해야 해요.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-4">
+                <label for="qna-4">독일 날씨는 어떤가?</label>
+                <div>
+                    <p>한국 보다는 서늘하고 따뜻한 편입니다. 하지만 날씨가 갑자기 변하는 경우가 있어서 일기예보를 꼭 확인하세요.</p>
+                </div>
+            </li>
+
+        </ul>
+            
+        </div>
+    </section>
+
+    <!--푸터-->
+    <footer class="bg-white">
+        <div class="container text-center">
+            <p class="mt-1 mb-4 text-black-50">Designed by 이지윤</p>
+        </div>
+    </footer>
+
+    <script src="../../cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

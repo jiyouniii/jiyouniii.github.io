@@ -1,0 +1,232 @@
+/*헤더*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+</style>
+
+
+#home{
+    background-image: url(images/header_background.png);
+    background-size: cover;
+    background-position: center top;
+    position:relative;
+}
+
+
+/*폰트*/
+p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.blackHan{
+    font-family: 'Black Han Sans', sans-serif;
+}
+.notoKR{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.writing{
+    font-family: 'Pacifico', cursive;
+}
+
+h1{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/*네비게이션 바 호버링*/
+.nav-link:hover, .nav-link:active{
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.category{
+    width: 1920px;
+    height: 1080px;
+    float:left;
+    position: absolute;
+}
+
+#weather-change, #together_home, #consumption {
+    background-color: #f3f3f3;
+}
+
+#together, #our_earth_home, .post:hover, .post:active, #recycle {
+    background-color: #F4F8F5;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.post{
+    background-color: white;
+}
+
+.page:hover{
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.newspaper{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), url(images/newspaper_p.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+#definition{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url(images/what_is_net_zero_main.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+td, th{
+    padding: 10px 15px;
+}
+
+#need{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1.0)), url(images/need_polar.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#goods{
+    background-image: linear-gradient(to top, rgba(243, 243, 243, 1.0), rgba(243, 243, 243, 0.0));
+}
+
+#daily_home{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url(images/practice_main.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.prac{
+    text-decoration: none;
+    color:black;
+}
+.prac:hover, .prac:active{
+    background-color: #4B6448;
+    color: white;
+}
+
+#energy{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url(images/energy_conservation_p.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#movement{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url(images/public_transport_p.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#protection{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)), url(images/nature_protect_p.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.layout{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qna{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.qna > li{
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.qna > li:nth-child(n+2){ /* 아이템 구분 점선 */
+  border-top: 1px dashed #aaa;
+}
+.qna input {
+  display: none;
+}
+.qna label { /* 제목 - 클릭 영역 */
+  font-weight: bold;
+  color: #000;
+  margin: 20px 0 0;
+  cursor: pointer;
+}
+.qna label::before { /* 제목 앞 화살표 */
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left: 8px solid #a00;
+  margin: 2px 0 0 8px;
+  float: left;
+}
+.qna input:checked + label::before { /* 내용 펼침 상태 제목 앞 화살표 */
+  border: 8px solid transparent;
+  border-top: 8px solid #a00;
+  border-bottom: 0;
+  margin: 8px 4px 0;
+}
+
+.qna div { /* 내용 영역 - 기본 감춤 상태 */
+  display: none;
+  color: #666;
+  font-size: 0.9375em;
+  overflow: hidden;
+  padding: 10px 0 10px 30px;
+  box-sizing: border-box;
+  transition: max-height 0.4s;
+}
+.qna input:checked + label + div { /* 내용 영역 펼침 */
+  display: block;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}

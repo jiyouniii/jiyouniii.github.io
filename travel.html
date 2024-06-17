@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All About German</title>
+    <link href="bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--구글 폰트-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <!--네비게이션-->
+    <nav class="navbar navbar-expand-sm bg-light-subtle fixed-top opacity-75" id="nav">
+        <div class="container">
+            <!--로고-->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/aag.png" width="150" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--메뉴-->
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2 mr">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">독일소개</a>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="life.html#visa" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일생활
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="life.html#visa">안멜둥&비자</a></li>
+                            <li><a class="dropdown-item" href="life.html#house">집구하기</a></li>
+                        </ul>
+                    </li>
+
+					<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#definition" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#home">
+                            독일여행
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="travel.html#map">지도보기</a></li>
+                            <li><a class="dropdown-item" href="travel.html#travelplace">여행지</a></li>
+							<li><a class="dropdown-item" href="travel.html#dialog">회화표현</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qna.html">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--지도보기 // map-->
+    <section class="py-5" id="map">
+        <div class="container overflow-hidden">
+            <div class="text-center pt-5">
+                <h1 class="blackHan display-3 mb-4">탄소 중립은 <b style="border-bottom: solid 10px #4B6448;">왜 필요할까?</b></h1>
+                <p class="m-0 fs-5">기후 변화로 인한 위험을 크게 줄이기 위하여 지구 평균 기온을 산업화 이전 대비 <b>1.5℃ 이하로 억제</b>해야 해요.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-lg-2 p-4 col-sm-6 ">
+                    <img src="images/temperature.png" width="100%">
+                </div>
+                <div class="col-lg-10 col-sm-6 p-4 text-center notoKR">
+                    <table>
+                        <tr style="background-color: #f3f3f3;">
+                            <th rowspan="2">구분</th>
+                            <th rowspan="2">극한 온난일</th>
+                            <th rowspan="2">극한 한랭야</th>
+                            <th rowspan="2">해수면 고도</th>
+                            <th rowspan="2">산호초</th>
+                            <th rowspan="2">해양 어획량</th>
+                            <th colspan="3">서식지의 절반 이상을 상실하는 종</th>
+                        </tr>
+                        <tr style="background-color: #f8f8f8;">
+                            <td>식물</td>
+                            <td>척추동물</td>
+                            <td>곤충</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="bg-success text-white">2℃ 온난화</td>
+                            <td>4.0℃ 상승</td>
+                            <td>6.0℃ 상승</td>
+                            <td>0.3~0.93m 상승</td>
+                            <td>99%가 위험</td>
+                            <td>300만 톤 감소</td>
+                            <td>16%</td>
+                            <td>8%</td>
+                            <td>18%</td>
+                        </tr>
+                        <tr style="background-color: #F4F8F5;">
+                            <th class="text-success">↑</th>
+                            <td>1.0℃</td>
+                            <td>1.5℃</td>
+                            <td>0.1m</td>
+                            <td>20~29%</td>
+                            <td>150만 톤</td>
+                            <td colspan="3">2~3배</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="bg-success text-white">1.5℃ 온난화</td>
+                            <td>3.0℃ 상승</td>
+                            <td>4.5℃ 상승</td>
+                            <td>0.26~0.0.77m 상승</td>
+                            <td>70~90%가 위험</td>
+                            <td>150만 톤 감소</td>
+                            <td>8%</td>
+                            <td>4%</td>
+                            <td>6%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!--여행지 // travelplace-->
+    <section class="py-5" id="travelplace" style="display: flex;flex-wrap: wrap;justify-content: center;">
+	
+		<div class="flip-card" id="1" >
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+			  <img src="images/IMG_1266.JPG" alt="Avatar" style="width:300px;height:200px;">
+			</div>
+			<div class="flip-card-back">
+			  <h1>John Doe</h1>
+			  <p>Architect & Engineer</p>
+			  <p>We love that guy</p>
+			</div>
+		  </div>
+		</div>
+	
+	<div class="flip-card" id="2">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+			  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:200px;">
+			</div>
+			<div class="flip-card-back">
+			  <h1>John Doe</h1>
+			  <p>Architect & Engineer</p>
+			  <p>We love that guy</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="flip-card" id="3">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+			  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:200px;">
+			</div>
+			<div class="flip-card-back">
+			  <h1>John Doe</h1>
+			  <p>Architect & Engineer</p>
+			  <p>We love that guy</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="flip-card" id="4">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+			  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:200px;">
+			</div>
+			<div class="flip-card-back">
+			  <h1>John Doe</h1>
+			  <p>Architect & Engineer</p>
+			  <p>We love that guy</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="flip-card" id="5">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+			  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:200px;">
+			</div>
+			<div class="flip-card-back">
+			  <h1>John Doe</h1>
+			  <p>Architect & Engineer</p>
+			  <p>We love that guy</p>
+			</div>
+		  </div>
+		</div>
+			
+        
+    </section>
+
+    
+    <!--회화표현//회화표현-->
+    <section class="py-5" id="dialog">
+        <div class="container overflow-hidden">
+            <div class="text-center pt-5">
+                <h1 class="blackHan display-3 mb-4">오늘의 회화표현</h1>
+                <p class="mb-5 fs-5">독일 실생활에서 유용한 표현</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="bg-white rounded">
+                        <h3 class="px-4 text-center blackHan">Was machst du heute?</h3>
+                        <ul class="pb-4 notoKR">
+                            <p>오늘 뭐해?</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="bg-white rounded">
+                        <h3 class="px-4 text-center blackHan">Ich habe viel zu tun</h3>
+                        <ul class="pb-4 notoKR">
+                            <p>나 할일이 많아</p>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="bg-white rounded">
+                        <h3 class="px-4 text-center blackHan">Wavon redest du?</h3>
+                        <ul class="pb-4 notoKR">
+                            <p>무슨 이야기를 하는거야?</p>
+                        </ul>
+						</div>
+                    </div>
+				     <div class="col-sm-6 col-lg-3">
+                    <div class="bg-white rounded">
+                        <h3 class="px-4 text-center blackHan">Guten Morgen!</h3>
+                        <ul class="pb-4 notoKR">
+                            <p>좋은 아침입니다</p>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--푸터-->
+    <footer class="bg-white">
+        <div class="container text-center">
+            
+            <p class="mt-1 mb-4 text-black-50">Designed by 이지윤</p>
+        </div>
+    </footer>
+
+    <script src="./bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
