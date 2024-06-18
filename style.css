@@ -16,6 +16,7 @@ html,
 body {
 	background: #eee;
 	font-size: 14px;
+	font-family: 'IBM Plex Sans KR';
 	color: #000;
 	margin: 0;
 	padding: 0;
@@ -103,7 +104,7 @@ td, th{
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 350px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -145,6 +146,39 @@ td, th{
   transform: rotateY(180deg);
 }
 
+.scene {
+  width: 200px;
+  height: 260px;
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 
 
@@ -180,3 +214,4 @@ td, th{
 	object-fit: cover;
   }
 
+.
